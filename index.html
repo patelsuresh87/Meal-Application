@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>       
+        <title>Meal Application</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9ca3ef8694.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <!-- nav bar -->
+            <div id="navbar">
+                <a href="index.html">
+                    <span id="heading">Meal Application</span>
+                </a>
+                <!-- Side Drawer -->
+             <div class="side-drawer">
+                <div id="toggle-sidebar">
+                    <!-- Sidebar Toggle Button with Counter -->
+                    <i class="fa-solid fa-bars"></i>
+                    <span id="total-counter">0</span>
+                </div>
+            </div>
+            </div>             
+        </nav>
+       <!-- main container flex box -->
+         <div id="mainContainer">
+            <div class="sidebar" id="sidebar">
+                <div class="top_gap"></div>
+                <div class="title small">
+                    Favorite Meals
+                </div>
+                <div id="fav">                     
+                </div>
+            </div>
+            <div id="flex-box">
+                <div class="container">
+                    <div class="header">
+                        <div class="title">
+                            <!-- Main Title -->
+                            Your Favorite Meal On Your Fingertips
+                        </div>
+                    </div>               
+                <div class="" id="search-bar">
+                    <div class="icon">
+                        <!-- Search Icon -->
+                        <i class="fa-solid fa-search "></i>
+                    </div>    
+                    <div class="new-search-input">
+                        <form onkeyup="showMealList()">
+                            <!-- Search Input -->
+                            <input id="search-input" type="text" placeholder="Search Your Fav Meal..." />
+                        </form>
+                    </div>    
+                    <a href="/">  
+                        <div id="meal-info"></div>
+                    </a>   
+                </div>
+            </div>
+            <!-- card holder display meals  -->
+            <div id="cards-holder" class="">
+            </div>
+             </div>
+         </div>    
+         <!-- footer items     -->
+         <footer id="footer">
+            <h4>Designed & Developed By <a href="">Suresh</a></h4>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
